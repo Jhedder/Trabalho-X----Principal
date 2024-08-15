@@ -36,4 +36,4 @@ class EscolhaView(tk.Frame):
     def adicionar_chefe_lista(self, chefe):
         self.chefes_listbox.insert(tk.END, f"id {chefe[0]} | nome  {chefe[1]} | fase  {chefe[2]} | poder  {chefe[3]} |")
     def show_info(self):
-        messagebox.showinfo("Os campos não podem estar vazios e o id deve ser digito.")
+        messagebox.showinfo("Número Inválido, Digite de Número 1 a 8.")

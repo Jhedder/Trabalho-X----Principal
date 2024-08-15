@@ -30,7 +30,7 @@ class ChefeView(tk.Frame):
 
         self.update_image()
 
-        # Texto com informações sobre o Magma Dragoon
+
         
 
         self.text_label = tk.Label(self, justify=tk.LEFT, padx=10, pady=10, bg='#8B0000', fg='white',
