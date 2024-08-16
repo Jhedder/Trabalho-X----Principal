@@ -31,10 +31,10 @@ class UsuarioModel:
         ''')
         self.conn.commit()
 
-    def inserir_chefe(self,nome, fase, poder):
+    def inserir_chefe(self,nome, fase, poder, url_img, descri):
         cursor = self.conn.cursor()
         try:
-            cursor.execute('INSERT INTO chefes (nome, fase, poder) VALUES (?, ?, ?)', (nome, fase, poder))
+            cursor.execute('INSERT INTO chefes (nome, fase, poder) VALUES (?, ?, ?, ?)', (nome, fase, poder, url_img, descri))
             self.conn.commit()
         except mariadb.Error as e:
             print(f"Erro ao inserir chefe: {e}")
