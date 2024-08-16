@@ -25,7 +25,8 @@ class UsuarioModel:
                 nome VARCHAR(100) NOT NULL,
                 fase VARCHAR(100),
                 poder VARCHAR(100),
-                url_img VARCHAR(200)       
+                url_img VARCHAR(200),
+                descri VARCHAR(255)       
             )
         ''')
         self.conn.commit()
